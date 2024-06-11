@@ -1,10 +1,10 @@
-package com.example.controllers;
+package com.example.registrationsystemapi.controllers;
 
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.dto.LoginRequestDto;
-import com.example.dto.RegisterRequestDto;
-import com.example.dto.ResponseDto;
+import com.example.registrationsystemapi.dto.LoginRequestDto;
+import com.example.registrationsystemapi.dto.RegisterRequestDto;
+import com.example.registrationsystemapi.dto.ResponseDto;
 import com.example.registrationsystemapi.domain.user.User;
 import com.example.registrationsystemapi.infra.security.TokenService;
 import com.example.registrationsystemapi.repositories.UserRepository;
@@ -36,7 +36,6 @@ public class AuthController {
         }
         return ResponseEntity.badRequest().build();
     }
-
 
     @PostMapping("/register")
     public ResponseEntity register(@RequestBody RegisterRequestDto body){

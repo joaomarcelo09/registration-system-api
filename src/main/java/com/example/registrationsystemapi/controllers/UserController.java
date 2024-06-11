@@ -1,4 +1,4 @@
-package com.example.controllers;
+package com.example.registrationsystemapi.controllers;
 
 
 import org.springframework.http.ResponseEntity;
